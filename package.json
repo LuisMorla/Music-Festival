@@ -1,0 +1,22 @@
+{
+  "name": "festivalmusica_inicio",
+  "version": "1.0.0",
+  "description": "Proyect with GULP and SASS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tasker": "gulp css"
+  },
+  "keywords": [
+    "SASS",
+    "GULP"
+  ],
+  "author": "LUIS Morla",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,95 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.lineup{
+  background-color: v.$Pink;
+  padding: 5rem;
+
+
+  h3, p{
+    text-align: center;
+    color: v.$White;
+  }
+
+
+  .day{
+    text-transform: uppercase;
+    margin: 5rem 0;
+  }
+}
+
+.container-card{
+  @include m.tablet {
+    @include m.grid(2, 5rem);
+  }
+
+  p{
+    color: v.$Black;
+  }
+}
+
+.escenary{
+  margin-top: 5rem;
+  padding-top: 2rem;
+
+  @include m.tablet{
+    @include m.grid(2, 5rem);
+    margin-top: 0;
+
+    .escenary-name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  } 
+
+  .escenary-name{
+    &:after{
+      content: '';
+      display: block;
+      width: 20rem;
+      height: 10rem;
+      background-size: 15rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 2rem auto 0 auto;
+    }
+  }
+}
+
+.EDM .escenary-name:after{
+  background-image: url('../img/icono_edm.png');
+}
+
+.Rock .escenary-name:after{
+  background-image: url('../img/icono_rock.png');
+}
+
+.bg-yellow{
+  background-color: v.$Yellow;
+
+  li:nth-child(odd){
+    background-color: darken(v.$Yellow, 15%);
+  }
+}
+
+.bg-green{
+  background-color: v.$Green;
+
+  li:nth-child(odd){
+    background-color: darken(v.$Green, 10%);
+  }
+}
+
+.calendary{
+  @include m.list-reset;
+
+  li{
+    padding: 2.5rem;
+    font-weight: 700;
+  }
+
+  span{
+    font-weight: 400;
+  }
+}

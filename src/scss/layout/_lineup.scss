@@ -2,7 +2,7 @@
 @use 'base/variables' as v;
 
 .lineup{
-  background-color: v.$Pink;
+  background: linear-gradient(270deg, rgba(165,3,255,0.5) 0%, rgba(255,0,110,0.3) 100%);
   padding: 5rem;
 
 
@@ -33,7 +33,6 @@
   padding-top: 2rem;
 
   @include m.tablet{
-    @include m.grid(2, 5rem);
     margin-top: 0;
 
     .escenary-name{

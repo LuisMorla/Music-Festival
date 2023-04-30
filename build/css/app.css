@@ -393,6 +393,9 @@ body {
   font-size: 1.6rem;
   margin: 0;
 }
+body.fixed-body {
+  overflow: hidden;
+}
 
 p {
   font-size: 2rem;
@@ -639,4 +642,73 @@ h3 {
 }
 .calendary span {
   font-weight: 400;
+}
+
+.galery {
+  padding: 5rem 0;
+}
+.galery h3 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.images-galery {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 480px) {
+  .images-galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .images-galery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .images-galery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.overlay picture {
+  display: block;
+  max-width: 80rem;
+}
+
+.btn-close {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+.btn-close:hover {
+  cursor: pointer;
+  color: red;
 }

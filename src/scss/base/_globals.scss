@@ -13,6 +13,10 @@ body{
   font-family: v.$Main-Font;
   font-size: 1.6rem;
   margin: 0;
+
+  &.fixed-body{
+    overflow: hidden;
+  }
 }
 
 p{

@@ -9,16 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
-    <script src="build/js/App.js"></script>
 </head>
 <body>
 <header class="header">
     <div class="container container-header">
         <h1>Rock & EDM Festival</h1>
         <nav class="main-nav">
-            <a href="#">Line Up</a>
-            <a href="#">Galery</a>
-            <a href="#">Tickets</a>
+            <a href="#lineup">Line Up</a>
+            <a href="#galery">Galery</a>
+            <a href="#tickets">Tickets</a>
         </nav>
     </div>
 </header>
@@ -61,7 +60,7 @@
 
 </section>
 
-<section class="lineup">
+<section id="lineup" class="lineup">
     <h3>
         Line Up
     </h3>
@@ -181,14 +180,14 @@
     </div><!-- Escenario container -->
 </section>
 
-<section class="container galery">
+<section id="galery" class="container galery">
     <h3>Galery</h3>
     <ul class="images-galery">
 
     </ul>
 </section>
 
-<section class="tickets bg-green">
+<section id="tickets" class="tickets bg-green">
     <h3>Tickets</h3>
 
     <div class="container container-tickets">
@@ -247,5 +246,6 @@
 <footer class="site-footer">
     <p>Rock & EDM Festival. Todos los derechos reservados</p>
 </footer>
+<script src="build/js/App.js"></script>
 </body>
 </html>

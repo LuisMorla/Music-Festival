@@ -17,6 +17,10 @@ body{
   &.fixed-body{
     overflow: hidden;
   }
+
+  &.scroll-body{
+    padding-top: 8.6rem;
+  }
 }
 
 p{

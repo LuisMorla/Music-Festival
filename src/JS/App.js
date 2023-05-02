@@ -3,9 +3,39 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function appRun() {
+  fixedNav();
   CreateGalery();
+  scrollNav();
 }
 
+function scrollNav() {
+  const links = document.querySelectorAll('.main-nav a');
+  links.forEach(links => {
+    links.addEventListener('click', function (e) {
+      e.preventDefault();
+      const scrollSection = e.target.attributes.href.value;
+      const section = document.querySelector(scrollSection);
+      section.scrollIntoView({behavior: "smooth"});
+    });
+  });
+}
+
+function fixedNav() {
+  const header = document.querySelector('.header');
+  const about = document.querySelector('.about-festival');
+  const body = document.querySelector('body');
+
+  window.addEventListener('scroll', function () {
+
+    if(about.getBoundingClientRect().top < 0){
+      header.classList.add('fixeded');
+      body.classList.add('scroll-body');
+    }else{
+      header.classList.remove('fixeded');
+      body.classList.remove('scroll-body');
+    }
+  });
+}
 function CreateGalery() {
   const galery = document.querySelector('.images-galery');
 

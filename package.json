@@ -4,8 +4,7 @@
   "description": "Proyect with GULP and SASS",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/scss:build/css",
-    "tasker": "gulp css"
+    "sass": "sass --watch src/scss:build/css"
   },
   "keywords": [
     "SASS",
